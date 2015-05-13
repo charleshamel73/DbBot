@@ -1,3 +1,10 @@
+Thanks to the Original Developers for the work they have done with DBBOT. This fork in no such
+way carries with it a permanant life. I only created it to apply a hot fix for the rebot issue.
+When running dbbot on a output file that has been recreated with rebot, a parsing error occurs.
+This is because rebot sets the suite start timestamp and end timestamp to N/A.
+This fork ignores the error setting the timestamp to a default date of '19500101...'
+At this current point, I notice no external issues being caused as a result. 
+
 DbBot
 =====
 
