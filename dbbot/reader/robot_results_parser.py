@@ -212,4 +212,9 @@ class RobotResultsParser(object):
         )
 
     def _format_robot_timestamp(self, timestamp):
-        return datetime.strptime(timestamp, '%Y%m%d %H:%M:%S.%f')
+        field = '19500101 13:52:50.789'
+		try:
+			field = datetime.strptime(timestamp, '%Y%m%d %H:%M:%S.%f')
+		except Exception:
+			print 'Invalid Format for Timestamp'
+			return field
